@@ -14,3 +14,16 @@ GET http://localhost:3000/contacts/66807b46db073a1bee5d8a5f HTTP/1.1
 
 ###
 
+GET https://cse341-iwnu.onrender.com/contacts HTTP/1.1
+
+###
+
+GET https://cse341-iwnu.onrender.com/contacts/66807de14457b9ab3fdd6f94 HTTP/1.1
+
+###
+
+GET https://cse341-iwnu.onrender.com/contacts/66807dfc4457b9ab3fdd6f95 HTTP/1.1
+
+###
+
+GET https://cse341-iwnu.onrender.com/contacts/66807b46db073a1bee5d8a5f HTTP/1.1
