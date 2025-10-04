@@ -38,7 +38,9 @@ const createContact = async (req, res) => {
     };
 
     const result = await mongodb.getDb().db().collection('contacts').insertOne(contact);
-    res.status(201).json({ insertedId: result.insertedId });
+
+    // 201 with ID of new contact
+    res.status(201).json({ id: result.insertedId });
   } catch (err) {
     res.status(500).json({ message: 'Failed to create contact', error: err.message });
   }
@@ -65,6 +67,7 @@ const updateContact = async (req, res) => {
 
     if (result.matchedCount === 0) return res.status(404).json({ message: 'Contact not found' });
 
+    // 204 No Content
     res.status(204).end();
   } catch (err) {
     res.status(500).json({ message: 'Failed to update contact', error: err.message });
@@ -80,7 +83,8 @@ const deleteContact = async (req, res) => {
 
     if (result.deletedCount === 0) return res.status(404).json({ message: 'Contact not found' });
 
-    res.status(204).end();
+    // 200 OK
+    res.status(200).json({ message: 'Contact deleted successfully' });
   } catch (err) {
     res.status(500).json({ message: 'Failed to delete contact', error: err.message });
   }

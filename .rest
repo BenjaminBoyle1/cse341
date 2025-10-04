@@ -30,7 +30,8 @@ GET http://localhost:3000/contacts/66807de14457b9ab3fdd6f94 HTTP/1.1
 ### DELETE contact 
 DELETE http://localhost:3000/contacts/68e16cbfc1ee9d8a6d9c5774 HTTP/1.1
 
-// PRODUCTION Deploy ### Get all contacts 
+// PRODUCTION Deploy 
+### Get all contacts 
 
 GET https://cse341-iwnu.onrender.com/contacts HTTP/1.1
 
@@ -62,4 +63,4 @@ content-type: application/json
 GET https://cse341-iwnu.onrender.com/contacts/6220bcb39cd507e920c75a0b HTTP/1.1
 
 ### DELETE contact 
-DELETE https://cse341-iwnu.onrender.com/contacts/6220e34083149913680f9a64 HTTP/1.1
+DELETE https://cse341-iwnu.onrender.com/contacts/68e170165161c375717ae28c HTTP/1.1
